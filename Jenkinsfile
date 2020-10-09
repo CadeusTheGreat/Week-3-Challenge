@@ -9,7 +9,7 @@ pipeline{
             steps{
                 script{
                     if (env.rollback == 'false'){
-                        sh "docker login --username USERNAME --password PASSWORD"
+                        sh "docker login --username cadeoldland --password PASSWORD"
                         sh "docker build -t cadeoldland/challenge ."
                     }
                 }
